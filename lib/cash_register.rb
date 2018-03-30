@@ -15,7 +15,7 @@ end
 #########################################
 def   add_item(n,val,qty=1)
   #@trn=(val*qty)
-  self.total +=(val*@qty)
+  self.total +=(val*qty)
      qty.times {@items << n}
 end
 #########################################
