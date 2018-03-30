@@ -1,4 +1,4 @@
- 
+
 class CashRegister
 attr_accessor  :total, :qty, :items
 
