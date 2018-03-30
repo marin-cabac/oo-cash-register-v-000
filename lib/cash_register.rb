@@ -4,9 +4,9 @@ attr_accessor  :total, :qty, :items
 
 
  #########################################
-def initialize(dsnt=0)
+def initialize(dscnt=0)
   @total = 0
-  @dsnt=dsnt #discount
+  @dscnt=dscnt #discount
   @trn=0     #transaction
   @items =[]
   @qty=qty
@@ -19,10 +19,10 @@ def   add_item(n,val,qty=1)
      qty.times {@items << n}
 end
 #########################################
-def discount()  @dsnt end
+def discount()  @dscnt end
 #########################################
 def apply_discount
-  v=@dsnt
+  v=@dscnt
 
   d=(@total-=@total/100*v)
   v == 0 ? ("There is no discount to apply.") : ("After the discount, the total comes to $#{d}.")
